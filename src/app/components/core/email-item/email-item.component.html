@@ -1,0 +1,27 @@
+<section matRipple>
+
+  <div class="actions">
+    <mat-checkbox color="primary" (change)="handleSelectionChange($event)" [checked]="email.checked">
+    </mat-checkbox>
+    <app-circle-button icon="star_border">
+    </app-circle-button>
+  </div>
+
+  <div class="centered overflowed sender">
+    {{email.sender}}
+  </div>
+
+  <div class="body">
+
+    <div class="subject">
+      {{email.subject}}
+    </div>
+    <div class="body-preview" [innerHTML]="calculateBodyPreview()">
+    </div>
+  </div>
+
+  <div class="centered timestamp">
+    {{formatDate()}}
+  </div>
+
+</section>

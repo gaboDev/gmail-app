@@ -1,0 +1,23 @@
+.rounded-button{
+  width: 25px;
+  height: 25px;
+  padding: 0.5em;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  transition: 0.2s background ease-in-out;
+  &:hover{
+    cursor: default;
+  }
+}
+
+.hovered{
+  &:hover{
+    cursor: pointer;
+    background: #bababa;
+  }
+}
+
+[withBackground='true']{
+  background: #ececec;
+}

@@ -1,0 +1,43 @@
+@import "../../../theme/colors";
+
+.tag-body{
+  background: whitesmoke;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  transition: 0.3s all ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+    background: #e2e2e2;
+  }
+
+  mat-icon{
+    color: #666666;
+  }
+
+  .items-count{
+    opacity: 0;
+  }
+}
+
+.active{
+  border-left: 3px solid $red;
+
+  mat-icon{
+    color: $red;
+  }
+
+  .label{
+    font-weight: 500;
+  }
+
+  .items-count{
+    font-style: italic;
+    color: #313131;
+    opacity: 1;
+  }
+
+}

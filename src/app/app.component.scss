@@ -1,0 +1,44 @@
+@import "theme/colors";
+
+.application{
+  background: $primary-background;
+  height: 100vh;
+
+  .main-container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 80vh;
+
+    .side-bar{
+      width: 20%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-right: 1px solid #d5d5d5;
+      app-action-button{
+        width: 80%;
+        margin: 1em 0;
+      }
+      app-tags{
+        width: 100%;
+      }
+    }
+
+    .page{
+      width: 60%;
+      flex-grow: 1;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 690px) {
+  .application{
+    .main-container{
+      .side-bar{
+        width: 40%;
+      }
+    }
+  }
+}

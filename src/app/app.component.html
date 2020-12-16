@@ -1,0 +1,14 @@
+<app-splash-screen *ngIf="areEmailsLoaded === false">
+</app-splash-screen>
+<section class="application">
+  <app-header></app-header>
+  <section class="main-container">
+    <section class="side-bar">
+      <app-action-button></app-action-button>
+      <app-tags></app-tags>
+    </section>
+    <section class="page">
+      <router-outlet></router-outlet>
+    </section>
+  </section>
+</section>

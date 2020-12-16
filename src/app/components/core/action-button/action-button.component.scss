@@ -1,0 +1,14 @@
+section{
+  width: 100%;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+
+  &:hover{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,9 @@
+<app-email-tag
+  *ngFor="let tag of getTagsConfig()"
+  [icon]="tag.icon"
+  [label]="tag.label"
+  [isActive]="tag.isActive"
+  [count]="tag.count"
+  (click)="handleClick(tag)"
+>
+</app-email-tag>

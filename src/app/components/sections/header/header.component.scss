@@ -1,0 +1,14 @@
+@import "../../../theme/colors";
+
+header{
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-background;
+  border-bottom: 1px solid #d5d5d5;
+
+  app-search-bar{
+    width: 50%;
+  }
+}

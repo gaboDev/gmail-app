@@ -1,0 +1,28 @@
+<section class="controls">
+  <mat-checkbox color="primary" (change)="handleSelectAllChange($event)" class="select-all">
+    Select All
+  </mat-checkbox>
+  <div class="group-actions">
+    <app-circle-button *ngFor="let button of actionsButtons"
+                       [icon]="button.icon"
+                       [isActive]="actionsButtonsAreActive"
+                       [color]="button.color"
+                       (clickFired)="button.action()"
+                       [withBackground]="actionsButtonsAreActive">
+    </app-circle-button>
+  </div>
+  <p class="metadata">
+    {{getSelectedEmailsCount()}} emails selected of {{getEmailsCount()}}
+  </p>
+</section>
+
+<section class="email-items" *ngIf="areThereEmails() === true">
+  <app-email-item *ngFor="let email of emails"
+                  [email]="email"
+                  (checkedEvent)="handleEmailChecked($event, email)"
+  ></app-email-item>
+</section>
+
+<p class="no-emails" *ngIf="areThereEmails() === false">
+  Inbox empty
+</p>

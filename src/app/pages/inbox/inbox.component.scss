@@ -1,0 +1,28 @@
+.controls{
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background: #e2e2e2;
+
+  .select-all{
+    margin-right: 2em;
+  }
+
+  .group-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .metadata{
+    margin: 0 0 0 20px;
+    font-style: italic;
+  }
+}
+
+.no-emails{
+  padding: 2em;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+}
